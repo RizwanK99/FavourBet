@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/favour-bet/static/css/main.388c6f97.css",
+    "main.js": "/favour-bet/static/js/main.01705ddb.js",
+    "static/js/787.3358feac.chunk.js": "/favour-bet/static/js/787.3358feac.chunk.js",
+    "index.html": "/favour-bet/index.html",
+    "main.388c6f97.css.map": "/favour-bet/static/css/main.388c6f97.css.map",
+    "main.01705ddb.js.map": "/favour-bet/static/js/main.01705ddb.js.map",
+    "787.3358feac.chunk.js.map": "/favour-bet/static/js/787.3358feac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.388c6f97.css",
+    "static/js/main.01705ddb.js"
+  ]
+}
