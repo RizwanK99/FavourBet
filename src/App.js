@@ -1,29 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import NavLink from 'react-bootstrap/NavLink';
-import Navbar from 'react-bootstrap/Navbar';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from './components/Navbar';
 
 import HomePage from './pages/HomePage';
 import NFLPage from './pages/NFLPage';
+import NHLPage from './pages/NHLPage';
+import EPLPage from './pages/EPLPage';
 
 function App() {
   return (
-    <>
-      <Navbar className='navbar-background'>
-          <NavLink className='navbar-container' href="/">Home</NavLink>
-          <NavLink className='navbar-container' href="/nfl">NFL</NavLink>
-      </Navbar>
-      <BrowserRouter>
+    <Router>
+      <div className='App'>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/nfl" element={<NFLPage />} />
+          <Route path="/"  element={<HomePage/>} />
+          <Route path="/nfl" element={<NFLPage/>} />
+          <Route path="/nhl" element={<NHLPage/>} />
+          <Route path="/epl" element={<EPLPage/>} />
         </Routes>
-      </BrowserRouter>
-    </>
-
+      </div>
+    </Router>
   );
 }
 

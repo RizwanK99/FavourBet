@@ -1,16 +1,16 @@
 import React from "react";
 import "./League.css";
 
-function NFLPage() {
+function EPLPage() {
   return (
     <div className="League">
       <header className="League-header">
         <h1>
-          NFL Page
+          English Premier League
         </h1>
       </header>
     </div>
   );
 }
 
-export default NFLPage;
+export default EPLPage;
